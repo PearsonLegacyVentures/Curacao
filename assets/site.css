@@ -42,3 +42,14 @@ h1,h2,h3{font-family:var(--serif);font-weight:800;letter-spacing:-.06em;line-hei
 .booking-price-panel p{margin:8px 0;color:#305b4e}
 .booking-price-panel .booking-price-amount{font-size:clamp(18px,3vw,24px);font-weight:800;color:#154e43}
 .booking-price-panel small{font-size:12px;line-height:1.65;color:#4c6d60}
+
+/* Additional area-guide sections · responsive, dark-site-native */
+.destination-planning .grid.grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:30px 0}
+.destination-planning .card{background:#203032;border:1px solid var(--line);border-radius:8px;min-width:0}
+.destination-planning .card-body{padding:27px}
+.destination-planning .card h3{font-size:clamp(20px,2vw,27px);line-height:1.25;color:#fff;margin-bottom:16px}
+.destination-planning .card p{font-size:15px;line-height:1.8;color:#c5d5cf}
+.destination-planning .card a{color:var(--accent);font-weight:700;text-underline-offset:4px}
+.destination-planning .intro p{max-width:960px;line-height:1.85}
+@media(max-width:900px){.destination-planning .grid.grid-3{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.destination-planning .grid.grid-3{grid-template-columns:1fr}.destination-planning .card-body{padding:23px}}
